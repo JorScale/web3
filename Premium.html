@@ -18,7 +18,7 @@
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"></a></div>
     <div class="preloader">
       <div class="preloader-body">
-        <p>Loading...</p>
+        <p>Cargando...</p>
       </div>
     </div>
     <div class="page">
@@ -100,10 +100,10 @@
       <section class="breadcrumbs-custom-inset">
         <div class="breadcrumbs-custom context-dark bg-overlay-60">
           <div class="container">
-            <h2 class="breadcrumbs-custom-title">About</h2>
             <ul class="breadcrumbs-custom-path">
-              <li><a href="index.html">Home</a></li>
-              <li class="active">About</li>
+              <li><a href="index.html">Inicio</a></li>
+              <li class="active">Habitaciones</li>
+              <li class="active">Premium</li>
             </ul>
           </div>
           <img class="box-position" src="images/u1.jpg" alt="">
@@ -116,83 +116,63 @@
             <div class="col-md-10 col-lg-5 col-xl-6"><img src="images/about-1-519x564.jpg" alt="" width="519" height="564"/>
             </div>
             <div class="col-md-10 col-lg-7 col-xl-6">
-              <h1 class="text-spacing-25 font-weight-normal title-opacity-9">Why choose us</h1>
-              <!-- Bootstrap tabs-->
-              <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
-                <!-- Nav tabs-->
-                <ul class="nav nav-tabs">
-                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-4-1" data-toggle="tab">Experience</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-2" data-toggle="tab">Skills</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-3" data-toggle="tab">Mission</a></li>
-                </ul>
-                <!-- Tab panes-->
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="tabs-4-1">
-                    <p>Aliquam malesuada bibendum arcu vitae elementum curabitur. A erat nam at lectus urna duis convallis convallis tellus. Sit amet consectetur adipiscing elit pellentesque.</p>
-                    <!-- Linear progress bar-->
-                    <article class="progress-linear progress-secondary">
-                      <div class="progress-header">
-                        <p>Tours</p>
+              <h1 class="text-spacing-25 font-weight-normal title-opacity-9">Habitaciones Premuim</h1>
+             <p>
+               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
+              </p>
+              <button class="btn btn-primary"
+              data-toggle="modal" data-target="#exampleModal">Reservar</button>
+               <!--modal-->
+               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Reservar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear" data-gradient=""><span class="progress-value">79</span><span class="progress-marker"></span></div>
-                      </div>
-                    </article>
-                    <!-- Linear progress bar-->
-                    <article class="progress-linear progress-orange">
-                      <div class="progress-header">
-                        <p>Excursions</p>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear" data-gradient=""><span class="progress-value">72</span><span class="progress-marker"></span></div>
-                      </div>
-                    </article>
-                    <!-- Linear progress bar-->
-                    <article class="progress-linear">
-                      <div class="progress-header">
-                        <p>Hotel Bookings</p>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear" data-gradient=""><span class="progress-value">88</span><span class="progress-marker"></span></div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-4-2">
-                    <div class="row row-40 justify-content-center text-center inset-top-10">
-                      <div class="col-sm-4">
-                        <!-- Circle Progress Bar-->
-                        <div class="progress-bar-circle" data-value="0.87" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
-                        <p class="progress-bar-circle-title">Tours</p>
-                      </div>
-                      <div class="col-sm-4">
-                        <!-- Circle Progress Bar-->
-                        <div class="progress-bar-circle" data-value="0.74" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
-                        <p class="progress-bar-circle-title">Excursions</p>
-                      </div>
-                      <div class="col-sm-4">
-                        <!-- Circle Progress Bar-->
-                        <div class="progress-bar-circle" data-value="0.99" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
-                        <p class="progress-bar-circle-title">Hotel Bookings</p>
+                      
+                        <form action="" class="modal-body">
+                          <article class="row">
+                            <article class="col-md-6">
+                              <label for="nombre">nombre</label>
+                              <input  class="form-control" type="text" name="" id="">
+                            </article>
+                            <article class="col-md-6">
+                              <label for="apellidos">Apellidos</label>
+                              <input  class="form-control" type="text" name="" id="">
+                            </article>
+                          </article>
+                          <article class="row">
+                              <article class="col-md-6">
+                                <label for="nombre">correo</label>
+                                <input  class="form-control" type="email" name="" id="">
+                              </article>
+                              <article class="col-md-6">
+                                <label for="apellidos">Telefono</label>
+                                <input  class="form-control" type="tel" name="" id="">
+                              </article>
+                            </article>
+                            <article class="row">
+                              <article class="col-md-6">
+                                <label for="nombre">cantidad</label>
+                                <input  class="form-control" type="number" name="" id="">
+                              </article>
+                              <article class="col-md-6">
+                                <label for="apellidos">fecha</label>
+                                <input  class="form-control" type="date" name="" id="">
+                              </article>
+                            </article>
+                        </form>
+                     
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
-                    <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk" href="#">Get in touch</a><a class="button button-black-outline button-width-xl-230" href="#">Read more</a></div>
-                  </div>
-                  <div class="tab-pane fade" id="tabs-4-3">
-                    <p>Orci nulla pellentesque dignissim enim sit. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque.</p>
-                    <div class="text-center text-sm-left offset-top-30 tab-height">
-                      <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
-                        <li>Lorem ipsum</li>
-                        <li>Consectetur adipiscing</li>
-                        <li>Sed do eiusmod</li>
-                        <li>Tempor incididunt</li>
-                        <li>Sem fringilla</li>
-                        <li>Ut venenatis</li>
-                      </ul>
-                    </div>
-                    <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk" href="#">Get in touch</a><a class="button button-black-outline button-md" href="#">Download presentation</a></div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -200,7 +180,7 @@
       <!-- Latest Projects-->
       <section class="section section-sm section-fluid bg-default">
         <div class="container">
-          <h3>Destinations</h3>
+          <h3>Galeria</h3>
         </div>
         <!-- Owl Carousel-->
         <div class="owl-carousel owl-classic owl-timeline" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="4" data-margin="30" data-autoplay="false" data-nav="true" data-dots="true">
@@ -293,7 +273,7 @@
       <!-- What people Say-->
       <section class="section section-sm section-last bg-default">
         <div class="container">
-          <h3>What People Say</h3>
+          <h3>Opiniones</h3>
           <!-- Owl Carousel-->
           <div class="owl-carousel owl-modern" data-items="1" data-stage-padding="15" data-margin="30" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay="true">
             <!-- Quote Lisa-->
@@ -329,48 +309,9 @@
           </div>
         </div>
       </section>
-      <!--Counters-->
-      <!-- Counter Classic-->
-      <section class="section section-fluid bg-default">
-        <div class="parallax-container" data-parallax-img="images/bg-counter-2.jpg">
-          <div class="parallax-content section-xl context-dark bg-overlay-26">
-            <div class="container">
-              <div class="row row-50 justify-content-center border-classic">
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">12</span>
-                    </div>
-                    <h5 class="counter-classic-title">Awards</h5>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">194</span>
-                    </div>
-                    <h5 class="counter-classic-title">Tours</h5>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">2</span><span class="symbol">k</span>
-                    </div>
-                    <h5 class="counter-classic-title">Travelers</h5>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-3">
-                  <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">25</span>
-                    </div>
-                    <h5 class="counter-classic-title">Team members</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
-      <!-- Page Footer--><a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a>
+      <!-- Page Footer-->
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
           <div class="container">
@@ -378,7 +319,7 @@
               <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInRight" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                    <h6 class="text-spacing-100 text-uppercase">Contactanos</h6>
                     <ul class="footer-contacts d-inline-block d-sm-block">
                       <li>
                         <div class="unit">
@@ -405,7 +346,7 @@
               <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInDown" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Popular news</h6>
+                    <h6 class="text-spacing-100 text-uppercase">Noticias Populares</h6>
                     <!-- Post Minimal 2-->
                     <article class="post post-minimal-2">
                       <p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
@@ -426,7 +367,7 @@
               <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase"> links</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
                       <li><a href="about.html">About us</a></li>
                       <li><a href="#">Our Tours</a></li>
