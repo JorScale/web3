@@ -58,7 +58,6 @@
                         <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
                       </div>
                     </li>
-                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#">Get a Free Quote</a>
                 </div>
               </div>
             </div>
@@ -112,12 +111,7 @@
       </header>
       <!-- RD Google Map-->
       <section class="section section-fluid">
-        <div class="google-map-container" data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker.png" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]">
-          <div class="google-map"></div>
-          <ul class="google-map-markers">
-            <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
-          </ul>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7847.778222174701!2d-85.0848974!3d10.430373500000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9feef4f965cf71%3A0x2f795c57ca6075ae!2sUniversidad+T%C3%A9cnica+Nacional%2C+Campus+Corobici!5e0!3m2!1ses!2scr!4v1565817042273!5m2!1ses!2scr" width="1920" height="412" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
 
       <!-- Contact information-->
@@ -195,7 +189,7 @@
                 </div>
               </div>
             </div>
-            <button class="button button-primary button-pipaluk" type="submit">Enviar</button>
+            <button class="button button-primary button-pipaluk" data-toggle="tooltip" data-placement="right" title="Enviar" type="submit">Enviar</button>
           </form>
         </div>
       </section>
@@ -256,15 +250,14 @@
               <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase"> Links</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
                       <li><a href="about.html">aceca de nosotros</a></li>
                       <li><a href="Estandar.html">Habitacion Estandar</a></li>
                         <li><a href="Premium.html">Habitacion Premium</a></li>
-                      <li><a href="Gallery.html">Gallery</a></li>
+                      <li><a href="Gallery.html">Galeria</a></li>
                     <li><a href="Familiar.html">Habitacion Familiar</a></li>
                     </ul>
-                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="#">Get in touch</a></div>
                   </div>
                 </div>
               </div>
@@ -301,5 +294,10 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
   </body>
 </html>
