@@ -58,7 +58,6 @@
                         <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
                       </div>
                     </li>
-                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#">Get a Free Quote</a>
                 </div>
               </div>
             </div>
@@ -179,7 +178,7 @@
                 </div>
               </div>
             </div>
-            <button class="button button-primary button-pipaluk" type="submit">Enviar</button>
+            <button class="button button-primary button-pipaluk" data-toggle="tooltip" data-placement="right" title="Enviar" type="submit">Enviar</button>
           </form>
         </div>
       </section>
@@ -240,15 +239,14 @@
               <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase"> Links</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
                       <li><a href="about.html">aceca de nosotros</a></li>
                       <li><a href="Estandar.html">Habitacion Estandar</a></li>
                         <li><a href="Premium.html">Habitacion Premium</a></li>
-                      <li><a href="Gallery.html">Gallery</a></li>
+                      <li><a href="Gallery.html">Galeria</a></li>
                     <li><a href="Familiar.html">Habitacion Familiar</a></li>
                     </ul>
-                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="#">Get in touch</a></div>
                   </div>
                 </div>
               </div>
@@ -285,5 +283,10 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
   </body>
 </html>
