@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Contactanos</title>
+    <title>Consejos</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -111,13 +111,70 @@
         </div>
       </header>
       <!-- RD Google Map-->
-      <section class="section section-fluid">
-        <div class="google-map-container" data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker.png" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]">
-          <div class="google-map"></div>
-          <ul class="google-map-markers">
-            <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
-          </ul>
-        </div>
+      <section class="container-fluid">
+        <article class="row"> 
+          <article class="col-12 col-md-6">
+            <img src="images/bootstrap.png" alt="">
+          </article>
+          <article class="col-12 col-md-6">
+            <h3>Consejos</h3>
+            <p>Hola a todos los blogerosdephp. En el anterior post, vimos 7 pasos claves para hacer una web adaptada a móviles con responsive desing. Hoy vamos a ver algunas recomendaciones para trabajar con Bootstrap (un framework responsive design).
+
+                Si quieren mirar cada código les recomiendo su centro de ayuda, <a href="http://getbootstrap.com/components/">http://getbootstrap.com/components/</a> </p>
+          </article>
+        </article>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Consejo #1
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                     cuando vinculen los css a su pagina.html es mejor poner en primer lugar el boostap.css y luego los demás estilos, dejando tu archivo de estilos propios de ultimo.
+
+                    ej:
+                    <link href=”css/bootstrap.css” media=”all” rel=”stylesheet”>
+
+<link href=”css/bootstrap-responsive.css” media=”all” rel=”stylesheet”>
+
+<link href=”css/estilos.css” media=”all” rel=”stylesheet”>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Consejo #2
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    importante para que no se autoescale la página a los smartphone: <p><meta name=”viewport” content=”width=device-width, initial-scale=1″></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Consejo #3
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    los contenedores estáticos como container row están bien utilizarlas en las pantallas grandes, pero para las pantallas pequeñas y tabletas utilicen las fluidas que son del 100% de la pantalla
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
 
       <!-- Contact information-->
